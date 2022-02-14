@@ -7,7 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1GX0Rqur8T45MSYhLU9MYWAbycfLH4-Fu
 """
 import spacy
-nlp = en_core_web_sm.load()
 # K80 gpu for 12 hours
 import torch
 from torch import nn, optim
