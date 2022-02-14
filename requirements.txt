@@ -170,3 +170,7 @@ wrapt==1.13.3
 xgboost==1.5.2
 yarl==1.7.2
 zipp==3.6.0
+
+setuptools~=57.0.0
+visdom~=0.1.8.9
+spacy~=3.2.2
