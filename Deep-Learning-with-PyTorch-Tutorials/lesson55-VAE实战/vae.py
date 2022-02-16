@@ -1,18 +1,10 @@
 import  torch
 from    torch import nn
 
-
-
-
-
 class VAE(nn.Module):
-
-
 
     def __init__(self):
         super(VAE, self).__init__()
-
-
         # [b, 784] => [b, 20]
         # u: [b, 10]
         # sigma: [b, 10]

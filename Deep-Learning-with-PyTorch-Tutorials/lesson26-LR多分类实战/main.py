@@ -10,7 +10,7 @@ learning_rate=0.01
 epochs=10
 
 train_loader = torch.utils.data.DataLoader(
-    datasets.MNIST('../data', train=True, download=True,
+    datasets.MNIST('../data', train=True, download=False,
                    transform=transforms.Compose([
                        transforms.ToTensor(),
                        transforms.Normalize((0.1307,), (0.3081,))
@@ -55,7 +55,7 @@ for epoch in range(epochs):
 
     for batch_idx, (data, target) in enumerate(train_loader):
         data = data.view(-1, 28*28)
-
+        print(data.shape)
         logits = forward(data)
         loss = criteon(logits, target)
 
